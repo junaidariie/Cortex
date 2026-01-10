@@ -9,7 +9,6 @@ from utils import STT, TTS
 from data_ingestion import Ingest_Data 
 from RAG import app as rag_app, Ragbot_State, reload_vector_store
 
-# Initialize FastAPI
 app = FastAPI(title="LangGraph RAG Chatbot", version="1.0")
 
 # --- Pydantic Models ---
@@ -64,7 +63,7 @@ async def upload_document(
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
+# Earlier i was using a function which was streaming fine on localhost but wasn't workng once i uploaded it on hf so i switched to non-streaming.
 @app.post("/chat")
 async def chat_endpoint(request: ChatRequest):
     config = {"configurable": {"thread_id": request.thread_id}}
@@ -117,3 +116,4 @@ async def text_to_speech(req: TTSRequest):
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
