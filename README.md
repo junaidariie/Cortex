@@ -2,6 +2,7 @@
 
 🚀 **Live Demo**: [https://junaidariie.github.io/Cortex/](https://junaidariie.github.io/Cortex/)
 
+
 ## Architecture Overview
 
 <img width="390" height="333" alt="image" src="https://github.com/user-attachments/assets/fe1f31ec-0e5c-4164-8fa9-4e0743e4f488" />
