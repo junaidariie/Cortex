@@ -10,7 +10,7 @@
 
 ## 🌟 Overview
 
-Cortex is a comprehensive AI-powered platform combining an intelligent chatbot with Retrieval-Augmented Generation (RAG) capabilities and a sophisticated multi-language translation system. Built with modern AI technologies, it provides seamless conversation, document analysis, and real-time translation across 50+ languages.
+Cortex is a comprehensive AI-powered platform combining an intelligent chatbot with Retrieval-Augmented Generation (RAG) capabilities and a sophisticated multi-language translation system. Built with modern AI technologies, it provides seamless conversation, document analysis, and real-time translation across 100+ languages.
 
 ## ✨ Features
 
@@ -25,7 +25,7 @@ Cortex is a comprehensive AI-powered platform combining an intelligent chatbot w
 - **📄 Document Processing**: Automatic PDF ingestion and vectorization
 
 ### 🔤 **Translation Features**
-- **🌍 50+ Languages**: Comprehensive language support
+- **🌍 100+ Languages**: Comprehensive language support
 - **🤖 NLLB 600M Model**: Meta's state-of-the-art translation engine
 - **🔍 Auto-Detection**: Smart language detection
 - **🎧 Neural TTS**: Language-specific voice synthesis
@@ -200,7 +200,7 @@ GET /
 ```json
 {
   "status": "ok",
-  "message": "Backend running (In-Memory Mode) 🚀"
+  "message": "Backend running"
 }
 ```
 
@@ -244,7 +244,7 @@ POST /tts/target
 
 ### Translation Capabilities
 
-#### **Supported Languages (50+)**
+#### **Supported Languages (100+)**
 - **European**: English, French, German, Spanish, Italian, Russian, etc.
 - **Asian**: Chinese, Japanese, Korean, Hindi, Tamil, Telugu, etc.
 - **Middle Eastern**: Arabic, Persian, Hebrew, Turkish, Kurdish
@@ -403,27 +403,6 @@ CMD ["sh", "-c", "uvicorn app:app --host 0.0.0.0 --port 8000 & uvicorn translato
 - **TTS Generation**: < 1 second for short texts
 - **Model Size**: ~2.3GB (NLLB 600M)
 
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/amazing-feature`)
-3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
-4. **Push** to the branch (`git push origin feature/amazing-feature`)
-5. **Open** a Pull Request
-
-### Areas for Contribution
-- Adding new language support
-- Improving translation accuracy
-- Enhancing UI/UX
-- Adding new AI models
-- Documentation improvements
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 👨‍💻 Author
 
 **Junaid** - [GitHub Profile](https://github.com/junaidariie)
@@ -438,18 +417,5 @@ Aspiring Machine Learning Engineer building intelligent systems to bridge langua
 - **LangChain** community for the amazing framework
 - **Tavily** for real-time web search
 - **Edge TTS** for high-quality speech synthesis
-
-## 📞 Support
-
-For support, questions, or feature requests:
-1. Open an issue on GitHub
-2. Check the documentation above
-3. Review existing issues for solutions
-
----
-
-**Live Demo**: [https://junaidariie.github.io/Cortex/](https://junaidariie.github.io/Cortex/)
-
-**GitHub Repository**: [https://github.com/junaidariie/Cortex](https://github.com/junaidariie/Cortex)
 
 ⭐ **Star this repo if you find it useful!** ⭐
