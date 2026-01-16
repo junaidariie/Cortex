@@ -1,0 +1,11 @@
+langdetect
+transformers
+torch
+sentencepiece
+groq
+edge-tts
+dotenv
+uuid
+fastapi 
+uvicorn
+python-multipart
